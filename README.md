@@ -58,3 +58,40 @@ This project was developed in Google Colab. To run it locally or in another envi
 
 ```bash
 pip install pandas numpy matplotlib seaborn nltk wordcloud scikit-learn spacy langdetect fuzzywuzzy[speedup] sentence-transformers torch torchvision retvec tensorflow tensorflow-text openpyxl
+
+
+*Note: openpyxl is needed by Pandas to read .xlsx files.*
+
+You will also need to download necessary data for NLTK and spaCy:
+
+```Python
+import nltk
+import spacy
+
+nltk.download('punkt')
+nltk.download('stopwords')
+nltk.download('wordnet')
+nltk.download('punkt_tab')
+
+spacy.cli.download('en_core_web_sm')
+If you are using the RETVec part, you will need the RETVec model saved at the specified path (/content/drive/MyDrive/dslab/retvec_model).
+
+### How to Use
+Clone the repository:
+
+```bash
+git clone course_data_analysis
+cd course_data_analysis
+
+* **Install dependencies**: Follow the steps in the "Setup & Installation" section.
+* **Ensure Dataset Availability**: Make sure the dataset.xlsx file is accessible and update the pd.read_excel path in the notebook if necessary.
+* **Run the Notebook**: Open dslab1_ipynb_másolata.ipynb in a Jupyter environment (like Jupyter Lab, Jupyter Notebook, or * VS Code with Python/Jupyter extensions) or upload it to Google Colab.
+* **Execute the cells**: Run the cells sequentially to perform the analysis.
+
+
+## Future Work
+* Refine the skill extraction process with a more extensive skill list or advanced extraction methods.
+* Utilize more advanced text embedding models (like BERT or domain-specific models) for improved similarity and clustering.
+* Compare the extracted skills and topics with actual cybersecurity job market requirements.
+* Develop an interactive dashboard to explore the results.
+Author
