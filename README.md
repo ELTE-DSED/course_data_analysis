@@ -78,7 +78,7 @@ spacy.cli.download('en_core_web_sm')
 
 If you are using the RETVec part, you will need the RETVec model saved at the specified path (/content/drive/MyDrive/dslab/retvec_model).
 
-### How to Use
+## How to Use
 Clone the repository:
 
 ```bash
