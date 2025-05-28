@@ -58,13 +58,13 @@ This project was developed in Google Colab. To run it locally or in another envi
 
 ```bash
 pip install pandas numpy matplotlib seaborn nltk wordcloud scikit-learn spacy langdetect fuzzywuzzy[speedup] sentence-transformers torch torchvision retvec tensorflow tensorflow-text openpyxl
-
+```
 
 *Note: openpyxl is needed by Pandas to read .xlsx files.*
 
 You will also need to download necessary data for NLTK and spaCy:
 
-```Python
+```python
 import nltk
 import spacy
 
@@ -74,6 +74,8 @@ nltk.download('wordnet')
 nltk.download('punkt_tab')
 
 spacy.cli.download('en_core_web_sm')
+```
+
 If you are using the RETVec part, you will need the RETVec model saved at the specified path (/content/drive/MyDrive/dslab/retvec_model).
 
 ### How to Use
@@ -82,6 +84,7 @@ Clone the repository:
 ```bash
 git clone course_data_analysis
 cd course_data_analysis
+```
 
 * **Install dependencies**: Follow the steps in the "Setup & Installation" section.
 * **Ensure Dataset Availability**: Make sure the dataset.xlsx file is accessible and update the pd.read_excel path in the notebook if necessary.
