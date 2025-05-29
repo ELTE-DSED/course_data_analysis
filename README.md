@@ -21,7 +21,8 @@ The analysis is performed on an Excel file named `dataset.xlsx`. Each row repres
 * `country`
 * `description` (The primary text field for our analysis)
 
-**Note:** This notebook currently loads the dataset from a specific path on Google Drive (`/content/drive/MyDrive/dslab/dataset.xlsx`). You will need to adjust this path or upload the dataset to your GitLab repository (using LFS if it's large) and modify the loading code accordingly if running outside the original Google Colab environment.
+**Note:** This notebook currently loads the dataset from a specific path on Google Drive (`/content/drive/MyDrive/dslab/dataset.xlsx`). 
+The dataset is uploaded in the repository as `dataset.xlxs`, so it can be downloaded from here.
 
 ## Key Features & Techniques Used
 
@@ -54,7 +55,7 @@ This notebook demonstrates a variety of NLP and data analysis techniques:
 
 ## Setup & Installation
 
-This project was developed in Google Colab. To run it locally or in another environment, you'll need Python 3 and the following libraries. You can install them using pip:
+This project was developed in Google Colab. To run it locally or in another environment, Python 3 and the following libraries are needed. They can be can install using following pip command:
 
 ```bash
 pip install pandas numpy matplotlib seaborn nltk wordcloud scikit-learn spacy langdetect fuzzywuzzy[speedup] sentence-transformers torch torchvision retvec tensorflow tensorflow-text openpyxl
@@ -62,7 +63,7 @@ pip install pandas numpy matplotlib seaborn nltk wordcloud scikit-learn spacy la
 
 *Note: openpyxl is needed by Pandas to read .xlsx files.*
 
-You will also need to download necessary data for NLTK and spaCy:
+The necessary data for NLTK and spaCy are also have to be downloaded:
 
 ```python
 import nltk
@@ -76,7 +77,8 @@ nltk.download('punkt_tab')
 spacy.cli.download('en_core_web_sm')
 ```
 
-If you are using the RETVec part, you will need the RETVec model saved at the specified path (/content/drive/MyDrive/dslab/retvec_model).
+**Note:** The notebook uses a RETVec model saved and loaded from the specified path (/content/drive/MyDrive/dslab/retvec_model).
+To be able to run it locally, the `saved_model.pb` from the reposiroty has to be downloaded and used in the notebook.
 
 ## How to Use
 Clone the repository:
@@ -97,4 +99,3 @@ cd course_data_analysis
 * Utilize more advanced text embedding models (like BERT or domain-specific models) for improved similarity and clustering.
 * Compare the extracted skills and topics with actual cybersecurity job market requirements.
 * Develop an interactive dashboard to explore the results.
-Author
