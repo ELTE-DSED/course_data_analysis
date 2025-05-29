@@ -90,7 +90,7 @@ cd course_data_analysis
 
 * **Install dependencies**: Follow the steps in the "Setup & Installation" section.
 * **Ensure Dataset Availability**: Make sure the dataset.xlsx file is accessible and update the pd.read_excel path in the notebook if necessary.
-* **Run the Notebook**: Open dslab1_ipynb_másolata.ipynb in a Jupyter environment (like Jupyter Lab, Jupyter Notebook, or * VS Code with Python/Jupyter extensions) or upload it to Google Colab.
+* **Run the Notebook**: Open dslab1_ipynb_másolata.ipynb in a Jupyter environment (like Jupyter Lab, Jupyter Notebook, or VS Code with Python/Jupyter extensions) or upload it to Google Colab.
 * **Execute the cells**: Run the cells sequentially to perform the analysis.
 
 
